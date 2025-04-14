@@ -49,9 +49,12 @@ chercher
         <td>
           <a onclick="return confirm('etes vous sure de vouloir supprimer?')"
              class="btn btn-danger" th:href="@{/delete(id=${p.id},keyword=${keyword},page=${currentPage})}">Delete</a>
-        <a class="btn btn-success" th:href="@{/editPatient(id=${p.id},keyword=${keyword},page=${currentPage})}">
-            Edit
+        <a class="btn btn-success" th:href="@{/editPatient(id=${p.id},keyword=${keyword},page=${currentPage})}">Edit Patient
         </a>
+            <a class="btn btn-outline-info" th:href="@{/index/{id}(id=${p.id})}">
+
+                View Patient
+            </a>
         </td>
 
 
